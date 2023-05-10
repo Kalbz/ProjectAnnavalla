@@ -1,22 +1,23 @@
 import React from 'react';
-import styled from 'styled-components';
+import backgroundImage from '../Assets/Images/test2.png';
 
-const BackgroundWrapper = styled.div`
-    background: #111512;
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-`;
-
-function Background({ color, children }) {
+const Background = ({ children }) => {
     return (
-        <BackgroundWrapper
-        color = {color}>{children}
-            
-        </BackgroundWrapper>
+        <div style={{
+            backgroundImage: `url(${backgroundImage})`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100vh",
+
+        }}>
+            {children}
+        </div>
     );
-}
+};
+
 export default Background;

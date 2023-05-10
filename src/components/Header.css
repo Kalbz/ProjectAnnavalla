@@ -1,0 +1,35 @@
+header {
+
+    display:flex;
+    flex-direction: row;
+    font-size: 80px;
+    background-color: #111512;
+    justify-content: flex-end;
+
+    padding-right: 10%;
+    height: 7%;
+
+
+    
+}
+
+li {
+    display:inline;
+    
+}
+
+a {
+    padding: 40px;
+    margin: 10px;
+    font-size: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+header nav ul li a {
+    color: #F18F01;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+/* Add some padding to the body to prevent the fixed header from covering your content */

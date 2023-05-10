@@ -1,19 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
 import Background from './components/Background';
+import Header from './components/Header.js';
+import './components/Header.css'
+import Button from './components/Button.js';
+import Circle from './components/Circle';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <Background color="#111512">
-        <h1>
-          Welcome to Annavälla
+    <div className="App" >
+      <div className="background">
+      <Header></Header>
 
-        </h1>
+      <Background>
+
+<Button text="This is some text above the button" />
 
       </Background>
-      </header>
+      </div>
+      <Circle></Circle>
     </div>
   );
 }
